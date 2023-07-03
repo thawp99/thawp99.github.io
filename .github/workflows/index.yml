@@ -1,0 +1,48 @@
+name: Update Index
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - '**.tgz'
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+        with:
+          version: 'v3.3.1'
+
+      - name: List files 1
+        run: ls -ltr
+
+      - name: Checkout Helm Packages Repo
+        uses: actions/checkout@v2
+        with:
+          repository: "thawp99/thawp99.github.io" # replace "username" with your GitHub username
+          token: ${{ secrets.ACTION_TOKEN }}
+          path: ./thawp99.github.io
+
+      - name: Check last commit
+        run: |
+          cd ./thawp99.github.io
+          git log -1 --pretty=%B
+
+      - name: Commit and Push Package to GitHub
+        run: |
+          cd ./thawp99.github.io/helm_package
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"
+          helm repo index --url https://thawp99.github.io/helm_package/ .  # update Helm repo index
+          git commit -a -m "Update index $(git log -1 --pretty=%B)"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          
