@@ -2,8 +2,22 @@ apiVersion: v1
 entries:
   k8s-common-app:
   - apiVersion: v2
+    appVersion: 1.0.4
+    created: "2023-07-04T10:26:54.432766812Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.6.0
+    description: A Helm Chart for deploy the kubernetes resources of an application
+    digest: db2b08713fc6121fab84ef031828a921b39d780ebc4f9c768ffc15eff6453ea5
+    name: k8s-common-app
+    type: application
+    urls:
+    - https://thawp99.github.io/helm_package/k8s-common-app-1.0.4-develop-40.tgz
+    version: 1.0.4-develop-40
+  - apiVersion: v2
     appVersion: 1.0.3
-    created: "2023-07-03T13:17:46.159693991Z"
+    created: "2023-07-04T10:26:54.423758249Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -17,7 +31,7 @@ entries:
     version: 1.0.3-develop-39
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2023-07-03T13:17:46.151841609Z"
+    created: "2023-07-04T10:26:54.41215474Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -29,4 +43,4 @@ entries:
     urls:
     - https://thawp99.github.io/helm_package/k8s-common-app-1.0.2-develop-38.tgz
     version: 1.0.2-develop-38
-generated: "2023-07-03T13:17:46.144266944Z"
+generated: "2023-07-04T10:26:54.404040293Z"
