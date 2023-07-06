@@ -3,7 +3,7 @@ entries:
   k8s-app:
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2023-07-06T23:06:39.724774141Z"
+    created: "2023-07-06T23:08:12.436175287Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -17,7 +17,7 @@ entries:
     version: 1.0.5
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2023-07-06T23:06:39.718044713Z"
+    created: "2023-07-06T23:08:12.427949615Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -31,7 +31,7 @@ entries:
     version: 1.0.5-develop-42
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2023-07-06T23:06:39.705953161Z"
+    created: "2023-07-06T23:08:12.420940239Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -46,7 +46,78 @@ entries:
   k8s-app-devops:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-07-06T23:06:39.739673205Z"
+    created: "2023-07-06T23:08:12.457364516Z"
+    dependencies:
+    - alias: develop
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - develop
+      version: '>=1.0.5'
+    - alias: alpha
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - alpha
+      version: '>=1.0.5'
+    - alias: preprod
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - preprod
+      version: '>=1.0.5'
+    - alias: prod
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - prod
+      version: '>=1.0.5'
+    - alias: prod-a
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - prod-a
+      version: '>=1.0.5'
+    - alias: prod-b
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - prod-b
+      version: '>=1.0.5'
+    - alias: istio
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - istio
+      version: '>=1.0.5'
+    - alias: inactive
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - inactive
+      version: '>=1.0.5'
+    - alias: phase1
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - phase1
+      version: '>=1.0.5'
+    - alias: phase2
+      name: k8s-app
+      repository: https://thawp99.github.io/helm_package
+      tags:
+      - phase2
+      version: '>=1.0.5'
+    description: A Helm chart for Kubernetes using for AAA Anthos
+    digest: fd0fce8ac21c52439fd5737d6fb36d24ad64c775d3154da39166a898ddff3d2c
+    name: k8s-app-devops
+    type: application
+    urls:
+    - https://thawp99.github.io/helm_package/k8s-app-devops-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-07-06T23:08:12.446960151Z"
     dependencies:
     - alias: develop
       name: k8s-app
@@ -118,7 +189,7 @@ entries:
   k8s-common-app:
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2023-07-06T23:06:39.767796125Z"
+    created: "2023-07-06T23:08:12.478385545Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -132,7 +203,7 @@ entries:
     version: 1.0.4-develop-40
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2023-07-06T23:06:39.753641065Z"
+    created: "2023-07-06T23:08:12.47112817Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -146,7 +217,7 @@ entries:
     version: 1.0.3-develop-39
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2023-07-06T23:06:39.746969636Z"
+    created: "2023-07-06T23:08:12.464135293Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -158,4 +229,4 @@ entries:
     urls:
     - https://thawp99.github.io/helm_package/k8s-common-app-1.0.2-develop-38.tgz
     version: 1.0.2-develop-38
-generated: "2023-07-06T23:06:39.687699083Z"
+generated: "2023-07-06T23:08:12.413324964Z"
