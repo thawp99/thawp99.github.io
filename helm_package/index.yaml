@@ -3,7 +3,21 @@ entries:
   k8s-app:
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2023-07-06T22:28:23.246858787Z"
+    created: "2023-07-06T22:30:10.692234521Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.6.0
+    description: A Helm Chart for deploy the kubernetes resources of an application
+    digest: e61c206642be2c7264ab1caf33e231939e17df8bb7eed6299e6097b108dbe606
+    name: k8s-app
+    type: application
+    urls:
+    - https://thawp99.github.io/helm_package/k8s-app-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.0.5
+    created: "2023-07-06T22:30:10.684309235Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -17,7 +31,7 @@ entries:
     version: 1.0.5-develop-42
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2023-07-06T22:28:23.237526682Z"
+    created: "2023-07-06T22:30:10.674959215Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -32,7 +46,7 @@ entries:
   k8s-common-app:
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2023-07-06T22:28:23.273290417Z"
+    created: "2023-07-06T22:30:10.719033952Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -46,7 +60,7 @@ entries:
     version: 1.0.4-develop-40
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2023-07-06T22:28:23.264245828Z"
+    created: "2023-07-06T22:30:10.709877736Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -60,7 +74,7 @@ entries:
     version: 1.0.3-develop-39
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2023-07-06T22:28:23.256418304Z"
+    created: "2023-07-06T22:30:10.701905449Z"
     dependencies:
     - name: common
       repository: https://tdg-docker-registry.aaa.dmp.true.th/chartrepo/library
@@ -72,4 +86,4 @@ entries:
     urls:
     - https://thawp99.github.io/helm_package/k8s-common-app-1.0.2-develop-38.tgz
     version: 1.0.2-develop-38
-generated: "2023-07-06T22:28:23.229140129Z"
+generated: "2023-07-06T22:30:10.665527993Z"
